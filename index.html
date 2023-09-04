@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -69,6 +73,7 @@
         alt="Krisna Profile Picture"
         width="200"
         class="rounded-circle img-thumbnail"
+        
       />
       <h1 class="display-4">I'm I Putu Krisna Dharma Saputra!</h1>
       <p class="lead">Fresh Graduate | Fullstack Web Developer</p>
@@ -91,7 +96,7 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="500">
             <p>
               I'm a recent Computer Science graduate from Bina Nusantara
               University specialized in intelligence systems, driven by a
@@ -103,7 +108,7 @@
               the Laravel Framework for project development.
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
             <p>
               Beyond web development, I've delved into the exciting realm of
               artificial intelligence, acquiring a fundamental understanding of
@@ -136,8 +141,7 @@
         </div>
         <div class="row justify-content-evenly">
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <!-- search image using  -->
+            <div class="card" data-aos="flip-right" data-aos-duration="500">
               <img
                 src="img/projects/jkt48.jpg"
                 class="card-img-top"
@@ -146,7 +150,16 @@
               <div class="card-body">
                 <h4> Web Application Prototype for JKT48 Theater Ticket Sales</h4>
                 <p class="card-text">
-                  This is my final project for database subject at Bina Nusantara University, created using HTML, CSS, and JavaScript.
+                  This is my final project for database subject at Bina Nusantara University.
+                </p>
+                <p class="card-text">
+                  Created using: <br>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                  </ul>
                 </p>
                 <a
                   href="https://github.com/krisnadharma1412/Perancangan-Database-Sistem-Penjualan-Tiket-Online-Theater-JKT48-Berbasis-Website"
@@ -157,8 +170,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <!-- search image using  -->
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100"> 
               <img
                 src="img/projects/monitoring-maintenance.jpg"
                 class="card-img-top"
@@ -173,12 +185,19 @@
                   team itself more easily.
                 </p>
                 <p class="card-text">
-                  This software is a culmination of backend collaboration
-                  utilizing the PHP programming language with the Laravel
-                  framework, along with Javascript components including JQuery
-                  to optimize interactive functions. On the user interface side,
-                  the front end is developed using CSS and Bootstrap, ensuring a
-                  responsive and visually pleasing design.
+                  Created using: <br>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>PHP</li>
+                    <li>LARAVEL</li>
+                    <li>AJAX</li>
+                    <li>MySQL</li>
+                    <li>PHPMyAdmin</li>
+                  </ul>
                 </p>
                 <a
                   href="https://github.com/krisnadharma1412/Perancangan-Database-Sistem-Penjualan-Tiket-Online-Theater-JKT48-Berbasis-Website"
@@ -188,22 +207,36 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-4 mb-3">
-            <div class="card"> -->
-              <!-- search image using  -->
-              <!-- <img
-                src="img/projects/gunpla3.jpg"
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200"> 
+              <img
+                src="img/projects/metatah-invitation.png"
                 class="card-img-top"
-                alt="img/projects/gunpla.jpg"
+                alt="Undangan Metatah"
               />
               <div class="card-body">
+                <h4>Metatah Invitation</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  This is an online invitation website i developed for my sister's and my metatah event. <br>
+                  Metatah/Mepandes ceremony in Bali is a significant cultural and religious event that signifies the transition from childhood to adolescence and the deeper commitment to the Balinese Hindu faith. It reflects the rich cultural and spiritual traditions of Bali and underscores the importance of community and family in Balinese society.
                 </p>
+                <p class="card-text">
+                  Created using: <br>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </p>
+                <a
+                  href="https://krisnadharma1412.github.io/Metatah-Invitation/"
+                  target="_blank"
+                  ><small>Click to see the Website</small></a
+                >
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -291,5 +324,15 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <!-- GSAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script>
+      gsap.from('.navbar', { duration: 1, y: '-100%', opactity: 0, ease: 'bounce' })
+     </script>
   </body>
 </html>
